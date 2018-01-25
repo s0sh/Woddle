@@ -1,0 +1,77 @@
+/* Class = "IBUIButton"; normalTitle = "Logout"; ObjectID = "02A-0d-lO7"; */
+"02A-0d-lO7.normalTitle" = "Opzioni";
+
+/* Class = "IBUILabel"; text = "Enable chat:"; ObjectID = "0Ax-Kr-GVb"; */
+"0Ax-Kr-GVb.text" = "Abilita Chat:";
+
+/* Class = "IBUILabel"; text = "HI, AND WELLCOME TO"; ObjectID = "1ai-ce-Uye"; */
+"1ai-ce-Uye.text" = "HI, E BENVENUTO A";
+
+/* Class = "IBUIViewController"; title = "IM"; ObjectID = "1hK-a1-gXx"; */
+"1hK-a1-gXx.title" = "IM";
+
+/* Class = "IBUIButton"; normalTitle = "IM"; ObjectID = "6VO-Fl-Bre"; */
+"6VO-Fl-Bre.normalTitle" = "IM";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "B1E-VL-cR0"; */
+"B1E-VL-cR0.text" = "Tempo fa";
+
+/* Class = "IBUIButton"; normalTitle = "Status"; ObjectID = "Gua-mk-wnc"; */
+"Gua-mk-wnc.normalTitle" = "STATUS";
+
+/* Class = "IBUILabel"; text = "Message"; ObjectID = "NSb-1w-P6S"; */
+"NSb-1w-P6S.text" = "Messaggio";
+
+/* Class = "IBUITextView"; text = "Write comment."; ObjectID = "Opb-1h-k80"; */
+"Opb-1h-k80.text" = "Scrivi un commento";
+
+/* Class = "IBUILabel"; text = "Account state:"; ObjectID = "PIy-TR-AHj"; */
+"PIy-TR-AHj.text" = "Stato di Conto";
+
+/* Class = "IBUIButton"; normalTitle = "Search"; ObjectID = "QLP-IM-V1n"; */
+"QLP-IM-V1n.normalTitle" = "RICERCA";
+
+/* Class = "IBUIButton"; normalTitle = "Facebook"; ObjectID = "QVm-AV-Om7"; */
+"QVm-AV-Om7.normalTitle" = "Facebook";
+
+/* Class = "IBUILabel"; text = "message"; ObjectID = "XQa-yh-X62"; */
+"XQa-yh-X62.text" = "Messaggio";
+
+/* Class = "IBUIButton"; normalTitle = "LinkedIn"; ObjectID = "ZXb-GM-M22"; */
+"ZXb-GM-M22.normalTitle" = "LinkedIn";
+
+/* Class = "IBUIButton"; normalTitle = "show more"; ObjectID = "g64-2N-O3b"; */
+"g64-2N-O3b.normalTitle" = "Mostra di più";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "iZf-10-Ql6"; */
+"iZf-10-Ql6.text" = "Tempo fa";
+
+/* Class = "IBUIButton"; normalTitle = "Google Plus"; ObjectID = "jsK-zR-Gjh"; */
+"jsK-zR-Gjh.normalTitle" = "Google Plus";
+
+/* Class = "IBUIButton"; normalTitle = "Foursquare"; ObjectID = "k0D-RK-Q3z"; */
+"k0D-RK-Q3z.normalTitle" = "Foursquare";
+
+/* Class = "IBUIButton"; normalTitle = "Twitter"; ObjectID = "nmN-JC-pkq"; */
+"nmN-JC-pkq.normalTitle" = "Twitter";
+
+/* Class = "IBUIViewController"; title = "NEW UPDATE"; ObjectID = "p8z-m5-fiW"; */
+"p8z-m5-fiW.title" = "Nuovo aggiornamento";
+
+/* Class = "IBUILabel"; text = "CHOOSE HOW YOU WANT TO SIGN IN"; ObjectID = "pi3-vG-aVe"; */
+"pi3-vG-aVe.text" = "Scegliere come desideri accedervi";
+
+/* Class = "IBUILabel"; text = "message"; ObjectID = "s2o-9j-fSO"; */
+"s2o-9j-fSO.text" = "Messaggio";
+
+/* Class = "IBUIButton"; normalTitle = "show more"; ObjectID = "uAW-w7-8b5"; */
+"uAW-w7-8b5.normalTitle" = "Mostra di più";
+
+/* Class = "IBUIButton"; normalTitle = "Instagram"; ObjectID = "uV8-28-sMg"; */
+"uV8-28-sMg.normalTitle" = "Instagram";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "y92-za-X9k"; */
+"y92-za-X9k.text" = "Tempo fa";
+
+/* Class = "IBUIButton"; normalTitle = "Remove account from WODDL"; ObjectID = "aM0-3t-JzL"; */
+"aM0-3t-JzL.normalTitle" = "Rimuovere conto da WODDL";

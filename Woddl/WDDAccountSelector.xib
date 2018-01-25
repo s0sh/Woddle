@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="WDDAccountSelector">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="xy5-oR-k3M">
+                    <rect key="frame" x="-1" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Rqd-pO-CvU"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="2Lq-FU-D9z">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="1" id="Vtn-rr-gf8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0Us-Vo-Smo"/>
+                        <barButtonItem title="Title" style="plain" id="L2X-zn-Ngg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xlW-49-hq4"/>
+                        <barButtonItem style="done" systemItem="done" id="AJJ-cj-ZGV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="doneAction:" destination="1" id="QRE-w1-4Ab"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bWo-0H-1Ol">
+                    <rect key="frame" x="0.0" y="44" width="320" height="192"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="1" id="ORG-qo-8Al"/>
+                        <outlet property="delegate" destination="1" id="FRi-6J-fbg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xy5-oR-k3M" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="3RD-bY-uTu"/>
+                <constraint firstAttribute="bottom" secondItem="bWo-0H-1Ol" secondAttribute="bottom" id="8Pw-vw-ZFC"/>
+                <constraint firstAttribute="trailing" secondItem="xy5-oR-k3M" secondAttribute="trailing" id="9hr-lg-3Jb"/>
+                <constraint firstItem="xy5-oR-k3M" firstAttribute="top" secondItem="1" secondAttribute="top" id="KFF-aE-0HW"/>
+                <constraint firstAttribute="trailing" secondItem="bWo-0H-1Ol" secondAttribute="trailing" id="MD6-Uj-g32"/>
+                <constraint firstItem="bWo-0H-1Ol" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="awq-xN-SmM"/>
+                <constraint firstItem="bWo-0H-1Ol" firstAttribute="top" secondItem="xy5-oR-k3M" secondAttribute="bottom" id="q0o-ZC-FVa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneItem" destination="AJJ-cj-ZGV" id="HKm-Sw-CfY"/>
+                <outlet property="titleItem" destination="L2X-zn-Ngg" id="vTh-Ec-qsn"/>
+            </connections>
+        </view>
+    </objects>
+</document>

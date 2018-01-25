@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
+        <attribute name="commentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="likesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfile" inverseName="comments" inverseEntity="UserProfile" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserProfile" inverseName="likedComments" inverseEntity="UserProfile" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="comments" inverseEntity="Post" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="comments" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="FaceBookOthersProfile" representedClassName="FaceBookOthersProfile" parentEntity="FaceBookProfile" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FaceBookProfile" inverseName="friends" inverseEntity="FaceBookProfile" syncable="YES"/>
+        <relationship name="likedPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FaceBookPost" inverseName="likedBy" inverseEntity="FaceBookPost" syncable="YES"/>
+    </entity>
+    <entity name="FaceBookPost" representedClassName="FaceBookPost" parentEntity="Post" syncable="YES">
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FaceBookOthersProfile" inverseName="likedPosts" inverseEntity="FaceBookOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="FaceBookProfile" representedClassName="FaceBookProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FaceBookOthersProfile" inverseName="friendOf" inverseEntity="FaceBookOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="FacebookSN" representedClassName="FacebookSN" parentEntity="SocialNetwork" syncable="YES">
+        <attribute name="isChatEnabled" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+    </entity>
+    <entity name="FoursqaureProfile" representedClassName="FoursqaureProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoursquareOthersProfile" inverseName="friendOf" inverseEntity="FoursquareOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="FoursquareOthersProfile" representedClassName="FoursquareOthersProfile" parentEntity="FoursqaureProfile" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoursqaureProfile" inverseName="friends" inverseEntity="FoursqaureProfile" syncable="YES"/>
+        <relationship name="likedPost" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoursquarePost" inverseName="likedBy" inverseEntity="FoursquarePost" syncable="YES"/>
+    </entity>
+    <entity name="FoursquarePost" representedClassName="FoursquarePost" parentEntity="Post" syncable="YES">
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoursquareOthersProfile" inverseName="likedPost" inverseEntity="FoursquareOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="FoursquareSN" representedClassName="FoursquareSN" parentEntity="SocialNetwork" syncable="YES"/>
+    <entity name="GoogleCircle" representedClassName="GoogleCircle" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GooglePlusProfile" inverseName="circles" inverseEntity="GooglePlusProfile" syncable="YES"/>
+    </entity>
+    <entity name="GoogleOthersProfile" representedClassName="GoogleOthersProfile" parentEntity="GooglePlusProfile" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GooglePlusProfile" inverseName="friends" inverseEntity="GooglePlusProfile" syncable="YES"/>
+        <relationship name="likedPost" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GooglePlusPost" inverseName="likedBy" inverseEntity="GooglePlusPost" syncable="YES"/>
+    </entity>
+    <entity name="GooglePlusPost" representedClassName="GooglePlusPost" parentEntity="Post" syncable="YES">
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoogleOthersProfile" inverseName="likedPost" inverseEntity="GoogleOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="GooglePlusProfile" representedClassName="GooglePlusProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="circles" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GoogleCircle" inverseName="people" inverseEntity="GoogleCircle" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GoogleOthersProfile" inverseName="friendOf" inverseEntity="GoogleOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="GooglePlusSN" representedClassName="GooglePlusSN" parentEntity="SocialNetwork" syncable="YES">
+        <attribute name="updateToken" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="groupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isGroupBlock" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SocialNetwork" inverseName="groups" inverseEntity="SocialNetwork" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="group" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="InstagramOthersProfile" representedClassName="InstagramOthersProfile" parentEntity="InstagramProfile" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InstagramProfile" inverseName="friends" inverseEntity="InstagramProfile" syncable="YES"/>
+        <relationship name="likedPost" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InstagramPost" inverseName="likedBy" inverseEntity="InstagramPost" syncable="YES"/>
+    </entity>
+    <entity name="InstagramPost" representedClassName="InstagramPost" parentEntity="Post" syncable="YES">
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InstagramOthersProfile" inverseName="likedPost" inverseEntity="InstagramOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="InstagramProfile" representedClassName="InstagramProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InstagramOthersProfile" inverseName="friendOf" inverseEntity="InstagramOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="InstagramSN" representedClassName="InstagramSN" parentEntity="SocialNetwork" syncable="YES"/>
+    <entity name="LinkedinOthersProfile" representedClassName="LinkedinOthersProfile" parentEntity="LinkedinProfile" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LinkedinProfile" inverseName="friends" inverseEntity="LinkedinProfile" syncable="YES"/>
+        <relationship name="likedPost" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LinkedinPost" inverseName="likedBy" inverseEntity="LinkedinPost" syncable="YES"/>
+    </entity>
+    <entity name="LinkedinPost" representedClassName="LinkedinPost" parentEntity="Post" syncable="YES">
+        <attribute name="updateKey" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LinkedinOthersProfile" inverseName="likedPost" inverseEntity="LinkedinOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="LinkedinProfile" representedClassName="LinkedinProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LinkedinOthersProfile" inverseName="friendOf" inverseEntity="LinkedinOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="LinkedinSN" representedClassName="LinkedinSN" parentEntity="SocialNetwork" syncable="YES"/>
+    <entity name="Media" representedClassName="Media" syncable="YES">
+        <attribute name="mediaURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="previewURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="post" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="media" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName="Place" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkinsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="networkType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="places" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES">
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="isCommentable" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="isLikable" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="isSearchedPost" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="likesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="linkURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationValue" optional="YES" attributeType="Transformable" valueTransformerName="WDDLocationTransformer" syncable="YES"/>
+        <attribute name="postID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfile" inverseName="posts" inverseEntity="UserProfile" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Comment" inverseName="post" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="posts" inverseEntity="Group" syncable="YES"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Media" inverseName="post" inverseEntity="Media" syncable="YES"/>
+        <relationship name="places" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="posts" inverseEntity="Place" syncable="YES"/>
+        <relationship name="subscribedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfile" inverseName="subscribedPosts" inverseEntity="UserProfile" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="posts" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="SocialNetwork" representedClassName="SocialNetwork" isAbstract="YES" syncable="YES">
+        <attribute name="accessToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activeState" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exspireTokenTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="members" inverseEntity="Group" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfile" inverseName="socialNetwork" inverseEntity="UserProfile" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="tags" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="tags" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="TwitterOthersProfile" representedClassName="TwitterOthersProfile" parentEntity="TwitterProfile" syncable="YES">
+        <relationship name="friendOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TwitterProfile" inverseName="following" inverseEntity="TwitterProfile" syncable="YES"/>
+        <relationship name="retweetedFromMePosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TwitterPost" inverseName="retweetedFrom" inverseEntity="TwitterPost" syncable="YES"/>
+    </entity>
+    <entity name="TwitterPost" representedClassName="TwitterPost" parentEntity="Post" syncable="YES">
+        <attribute name="retweetsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="retweetedFrom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TwitterOthersProfile" inverseName="retweetedFromMePosts" inverseEntity="TwitterOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="TwitterProfile" representedClassName="TwitterProfile" parentEntity="UserProfile" syncable="YES">
+        <relationship name="following" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TwitterOthersProfile" inverseName="friendOf" inverseEntity="TwitterOthersProfile" syncable="YES"/>
+    </entity>
+    <entity name="TwitterSN" representedClassName="TwitterSN" parentEntity="SocialNetwork" syncable="YES"/>
+    <entity name="UserProfile" representedClassName="UserProfile" isAbstract="YES" syncable="YES">
+        <attribute name="avatarRemoteURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBlocked" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Comment" inverseName="author" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="likedComments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="likedBy" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Post" inverseName="author" inverseEntity="Post" syncable="YES"/>
+        <relationship name="socialNetwork" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SocialNetwork" inverseName="profile" inverseEntity="SocialNetwork" syncable="YES"/>
+        <relationship name="subscribedPosts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Post" inverseName="subscribedBy" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <fetchRequest name="GetAllSocialNetworks" entity="SocialNetwork"/>
+    <fetchRequest name="SocialNetworksWithAccessToken" entity="SocialNetwork" predicateString="accessToken == &quot;$TOKEN&quot;"/>
+    <fetchRequest name="SocialNetworksWithAccessTokenPrefix" entity="SocialNetwork" predicateString="accessToken BEGINSWITH &quot;$TOKEN_PREFIX&quot;"/>
+    <fetchRequest name="SocialNetworksWithProfileUserID" entity="SocialNetwork" predicateString="SELF.profile.userID LIKE[cd] $USER_ID"/>
+    <elements>
+        <element name="Comment" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FaceBookOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FaceBookPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FaceBookProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FacebookSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FoursqaureProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FoursquareOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FoursquarePost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="FoursquareSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GoogleCircle" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GoogleOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GooglePlusPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GooglePlusProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GooglePlusSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Group" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="InstagramOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="InstagramPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="InstagramProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="InstagramSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="LinkedinOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="LinkedinPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="LinkedinProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="LinkedinSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Media" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Place" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Post" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SocialNetwork" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Tag" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TwitterOthersProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TwitterPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TwitterProfile" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TwitterSN" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="UserProfile" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

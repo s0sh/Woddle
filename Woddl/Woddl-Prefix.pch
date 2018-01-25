@@ -1,0 +1,64 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <Heatmaps/Heatmaps.h>
+    #import "WDDConstants.h"
+
+    #define SUPRESS_TFLOG           ON
+    #define IS_TESTFLIGHT_RELEASE   OFF
+    #define IS_LOGGING_TO_FILE      OFF
+
+    #define ASSET_BY_SCREEN_HEIGHT(regular) (([[UIScreen mainScreen] bounds].size.height <= 480.0) ? (regular) : [(regular) stringByAppendingString:@"-568h"])
+    #define IS_IOS7 (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1)
+
+    #ifdef DEBUG
+        #define DLog(__format__, ...) NSLog(__format__, ## __VA_ARGS__)
+    #else
+        #if IS_LOGGING_TO_FILE == ON
+            #import "WDDLog.h"
+        #else
+            #if IS_TESTFLIGHT_RELEASE == ON && SUPRESS_TFLOG != ON
+                #define DLog(__format__, ...)  TFLog(__format__, ## __VA_ARGS__)
+            #else
+                #define DLog(__format__, ...)
+            #endif
+        #endif
+    #endif
+
+    #if IS_TESTFLIGHT_RELEASE == ON
+        #import <TestFlightSDK/TestFlight.h>
+        #define TF_CHECKPOINT(__NAME__) [TestFlight passCheckpoint:__NAME__]
+    #else
+        #define TF_CHECKPOINT(__NAME__)
+    #endif
+
+    #define APP_DELEGATE ((WDDAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+    #import "AFNetworking.h"
+    #import "UIAlertView+showMessage.h"
+    #import "UIViewController+BackArrow.h"
+    #import "UIViewController+NavbarLogo.h"
+    #import "SocialNetworkManager.h"
+    #import "NSMutableDictionary+NilLogging.h"
+    #import "UITextView+fixScrollForIOS7.h"
+    #import "NSMutableDictionary+NilLogging.h"
+    #import "WDDAppDelegate.h"
+    #import "NSDate+SocialNetworks.h"
+
+    #import "UIView+AnimationEnabledTracking.h"
+#endif

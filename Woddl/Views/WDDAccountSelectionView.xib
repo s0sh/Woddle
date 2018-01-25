@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gTf-2q-30k" customClass="WDDAccountSelectionView">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_white_checkmark_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-af-oDP" userLabel="checkmarkImage">
+                    <rect key="frame" x="226" y="10" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="5gg-Nn-ozC"/>
+                        <constraint firstAttribute="height" constant="24" id="FQl-3Q-q6P"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdz-QA-e3k" userLabel="usernameLabel">
+                    <rect key="frame" x="50" y="11" width="168" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sidebar_avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yLk-Px-b86" userLabel="avatarImage">
+                    <rect key="frame" x="10" y="6" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="KXX-h6-yb9"/>
+                        <constraint firstAttribute="height" constant="32" id="a4E-wq-ZuX"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzL-pP-nQF" userLabel="separator">
+                    <rect key="frame" x="0.0" y="43" width="260" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zga-uD-Gau">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zga-uD-Gau" secondAttribute="bottom" id="6JE-gW-k6f"/>
+                <constraint firstAttribute="bottom" secondItem="XzL-pP-nQF" secondAttribute="bottom" id="HaG-Vr-alR"/>
+                <constraint firstItem="zga-uD-Gau" firstAttribute="leading" secondItem="gTf-2q-30k" secondAttribute="leading" id="Mgk-qb-7HC"/>
+                <constraint firstAttribute="trailing" secondItem="nSF-af-oDP" secondAttribute="trailing" constant="10" id="MyR-o8-nfW"/>
+                <constraint firstItem="nSF-af-oDP" firstAttribute="centerY" secondItem="gTf-2q-30k" secondAttribute="centerY" id="UV5-0R-zHz"/>
+                <constraint firstItem="XzL-pP-nQF" firstAttribute="top" secondItem="yLk-Px-b86" secondAttribute="bottom" constant="5" id="bTm-aC-woA"/>
+                <constraint firstItem="nSF-af-oDP" firstAttribute="leading" secondItem="vdz-QA-e3k" secondAttribute="trailing" constant="8" id="dqi-Ng-hpZ"/>
+                <constraint firstAttribute="trailing" secondItem="XzL-pP-nQF" secondAttribute="trailing" id="erH-Ps-HP5"/>
+                <constraint firstItem="XzL-pP-nQF" firstAttribute="top" secondItem="vdz-QA-e3k" secondAttribute="bottom" constant="11" id="fss-yx-GSp"/>
+                <constraint firstAttribute="trailing" secondItem="zga-uD-Gau" secondAttribute="trailing" id="lMx-03-AzC"/>
+                <constraint firstItem="zga-uD-Gau" firstAttribute="top" secondItem="gTf-2q-30k" secondAttribute="top" id="p1h-EI-3Us"/>
+                <constraint firstItem="XzL-pP-nQF" firstAttribute="leading" secondItem="gTf-2q-30k" secondAttribute="leading" id="p3f-kJ-eVU"/>
+                <constraint firstItem="vdz-QA-e3k" firstAttribute="leading" secondItem="yLk-Px-b86" secondAttribute="trailing" constant="8" id="qad-s1-oOx"/>
+                <constraint firstItem="nSF-af-oDP" firstAttribute="centerY" secondItem="yLk-Px-b86" secondAttribute="centerY" id="uuQ-4w-ria"/>
+                <constraint firstItem="yLk-Px-b86" firstAttribute="leading" secondItem="gTf-2q-30k" secondAttribute="leading" constant="10" id="wQM-qR-6lJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="yLk-Px-b86" id="5HF-8G-dBs"/>
+                <outlet property="checkButton" destination="zga-uD-Gau" id="JhG-Kt-EfF"/>
+                <outlet property="checkmarkImage" destination="nSF-af-oDP" id="ay2-5g-H9E"/>
+                <outlet property="usernameLabel" destination="vdz-QA-e3k" id="Rgc-k4-oiR"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sidebar_avatar_placeholder" width="32" height="32"/>
+        <image name="status_white_checkmark_unchecked" width="24" height="24"/>
+    </resources>
+</document>

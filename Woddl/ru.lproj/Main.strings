@@ -1,0 +1,151 @@
+
+/* Class = "IBUIButton"; normalTitle = "Logout"; ObjectID = "02A-0d-lO7"; */
+"02A-0d-lO7.normalTitle" = "Настройки";
+
+/* Class = "IBUILabel"; text = "Enable chat:"; ObjectID = "0Ax-Kr-GVb"; */
+"0Ax-Kr-GVb.text" = "Включить чат:";
+
+/* Class = "IBUILabel"; text = "HI, AND WELLCOME TO"; ObjectID = "1ai-ce-Uye"; */
+"1ai-ce-Uye.text" = "ДОБРО ПОЖАЛОВАТЬ В";
+
+/* Class = "IBUILabel"; text = "John Lennon"; ObjectID = "1dG-mk-7Mh"; */
+"1dG-mk-7Mh.text" = "John Lennon";
+
+/* Class = "IBUIViewController"; title = "IM"; ObjectID = "1hK-a1-gXx"; */
+"1hK-a1-gXx.title" = "ЧАТ";
+
+/* Class = "IBUITextField"; text = "1"; ObjectID = "2kF-EH-B0b"; */
+"2kF-EH-B0b.text" = "1";
+
+/* Class = "IBUIButton"; normalTitle = "IM"; ObjectID = "6VO-Fl-Bre"; */
+"6VO-Fl-Bre.normalTitle" = "ЧАТ";
+
+/* Class = "IBUILabel"; text = "998"; ObjectID = "9eD-07-rtd"; */
+"9eD-07-rtd.text" = "998";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "B1E-VL-cR0"; */
+"B1E-VL-cR0.text" = "time ago";
+
+/* Class = "IBUILabel"; text = "Username"; ObjectID = "BEt-1v-cSL"; */
+"BEt-1v-cSL.text" = "Username";
+
+/* Class = "IBUIButton"; normalTitle = "Report bug"; ObjectID = "FIy-sI-N7E"; */
+"FIy-sI-N7E.normalTitle" = "Сообщить об ошибке";
+
+/* Class = "IBUILabel"; text = "999"; ObjectID = "G70-RM-nXP"; */
+"G70-RM-nXP.text" = "999";
+
+/* Class = "IBUIButton"; normalTitle = "Status"; ObjectID = "Gua-mk-wnc"; */
+"Gua-mk-wnc.normalTitle" = "СТАТУС";
+
+/* Class = "IBUILabel"; text = "John Lennon"; ObjectID = "JJi-Nb-3mX"; */
+"JJi-Nb-3mX.text" = "John Lennon";
+
+/* Class = "IBUILabel"; text = "Message"; ObjectID = "NSb-1w-P6S"; */
+"NSb-1w-P6S.text" = "Сообщние";
+
+/* Class = "IBUITextView"; text = "Write comment."; ObjectID = "Opb-1h-k80"; */
+"Opb-1h-k80.text" = "Добавить комментарий.";
+
+/* Class = "IBUILabel"; text = "Account state:"; ObjectID = "PIy-TR-AHj"; */
+"PIy-TR-AHj.text" = "Состояние аккаунта:";
+
+/* Class = "IBUIButton"; normalTitle = "Search"; ObjectID = "QLP-IM-V1n"; */
+"QLP-IM-V1n.normalTitle" = "ПОИСК";
+
+/* Class = "IBUIButton"; normalTitle = "Facebook"; ObjectID = "QVm-AV-Om7"; */
+"QVm-AV-Om7.normalTitle" = "Facebook";
+
+/* Class = "IBUILabel"; text = "Name Lastname"; ObjectID = "Qvx-6B-Yjd"; */
+"Qvx-6B-Yjd.text" = "Name Lastname";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "S2b-j2-x3J"; */
+"S2b-j2-x3J.title" = "Item";
+
+/* Class = "IBUILabel"; text = "998"; ObjectID = "SZz-90-SYd"; */
+"SZz-90-SYd.text" = "998";
+
+/* Class = "IBUILabel"; text = "message"; ObjectID = "XQa-yh-X62"; */
+"XQa-yh-X62.text" = "Сообщение";
+
+/* Class = "IBUIBarButtonItem"; title = " "; ObjectID = "Xhu-xx-nwT"; */
+"Xhu-xx-nwT.title" = " ";
+
+/* Class = "IBUIButton"; normalTitle = "Got Feedback"; ObjectID = "YKC-1q-jdj"; */
+"YKC-1q-jdj.normalTitle" = "Feedback";
+
+/* Class = "IBUIButton"; normalTitle = "LinkedIn"; ObjectID = "ZXb-GM-M22"; */
+"ZXb-GM-M22.normalTitle" = "LinkedIn";
+
+/* Class = "IBUILabel"; text = "Name Lastname"; ObjectID = "bbq-iH-9xK"; */
+"bbq-iH-9xK.text" = "Name Lastname";
+
+/* Class = "IBUILabel"; text = "998"; ObjectID = "dQl-4S-Chz"; */
+"dQl-4S-Chz.text" = "998";
+
+/* Class = "IBUIButton"; normalTitle = "show more"; ObjectID = "g64-2N-O3b"; */
+"g64-2N-O3b.normalTitle" = "Показать больше";
+
+/* Class = "IBUIBarButtonItem"; title = " "; ObjectID = "gQq-3r-71O"; */
+"gQq-3r-71O.title" = " ";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "geS-Fc-TBP"; */
+"geS-Fc-TBP.text" = "Label";
+
+/* Class = "IBUILabel"; text = "998"; ObjectID = "gyH-BE-V5q"; */
+"gyH-BE-V5q.text" = "998";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "iZf-10-Ql6"; */
+"iZf-10-Ql6.text" = "time ago";
+
+/* Class = "IBUILabel"; text = "Name Lastname"; ObjectID = "isr-xF-Qxx"; */
+"isr-xF-Qxx.text" = "Name Lastname";
+
+/* Class = "IBUIButton"; normalTitle = "Google Plus"; ObjectID = "jsK-zR-Gjh"; */
+"jsK-zR-Gjh.normalTitle" = "Google Plus";
+
+/* Class = "IBUIButton"; normalTitle = "Foursquare"; ObjectID = "k0D-RK-Q3z"; */
+"k0D-RK-Q3z.normalTitle" = "Foursquare";
+
+/* Class = "IBUILabel"; text = "Display name"; ObjectID = "nVC-qm-RcT"; */
+"nVC-qm-RcT.text" = "Display Name";
+
+/* Class = "IBUIButton"; normalTitle = "Twitter"; ObjectID = "nmN-JC-pkq"; */
+"nmN-JC-pkq.normalTitle" = "Twitter";
+
+/* Class = "IBUILabel"; text = "140"; ObjectID = "oH3-go-GI0"; */
+"oH3-go-GI0.text" = "140";
+
+/* Class = "IBUIButton"; normalTitle = "Add network"; ObjectID = "p65-Se-DMt"; */
+"p65-Se-DMt.normalTitle" = "Add Network";
+
+/* Class = "IBUIViewController"; title = "NEW UPDATE"; ObjectID = "p8z-m5-fiW"; */
+"p8z-m5-fiW.title" = "ОБНОВЛЕНИЕ";
+
+/* Class = "IBUILabel"; text = "CHOOSE HOW YOU WANT TO SIGN IN"; ObjectID = "pi3-vG-aVe"; */
+"pi3-vG-aVe.text" = "ВЫБЕРИТЕ СПОСОБ ВХОДА";
+
+/* Class = "IBUILabel"; text = "message"; ObjectID = "s2o-9j-fSO"; */
+"s2o-9j-fSO.text" = "Сообщение";
+
+/* Class = "IBUIButton"; normalTitle = "show more"; ObjectID = "uAW-w7-8b5"; */
+"uAW-w7-8b5.normalTitle" = "Показать больше";
+
+/* Class = "IBUIButton"; normalTitle = "Instagram"; ObjectID = "uV8-28-sMg"; */
+"uV8-28-sMg.normalTitle" = "Instagram";
+
+/* Class = "IBUILabel"; text = "time ago"; ObjectID = "y92-za-X9k"; */
+"y92-za-X9k.text" = "time ago";
+
+/* Class = "IBUILabel"; text = "999"; ObjectID = "zpg-jc-5DZ"; */
+"zpg-jc-5DZ.text" = "999";
+
+/* Class = "IBUIButton"; normalTitle = "Remove account from WODDL"; ObjectID = "aM0-3t-JzL"; */
+"aM0-3t-JzL.normalTitle" = "Удалить аккаунт из WODDL";
+
+"Zg9-Y6-Lbv.normalTitle" = "В сети";
+
+"kkw-cF-BqK.normalTitle" = "Не в сети";
+
+"8bD-Td-LQJ.normalTitle" = "Все";
+

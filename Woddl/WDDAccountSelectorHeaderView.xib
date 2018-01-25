@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="WDDAccountSelectorHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbV-pa-XlY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_black_checkmark_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="jH4-7e-f8x" userLabel="checkmarkImage">
+                    <rect key="frame" x="286" y="10" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="6Se-M7-x7E"/>
+                        <constraint firstAttribute="height" constant="24" id="yTU-h9-TXl"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sidebar_avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ubq-qv-46Y" userLabel="avatarImage">
+                    <rect key="frame" x="10" y="6" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="bUA-Zh-8bi"/>
+                        <constraint firstAttribute="height" constant="32" id="lvZ-pg-Bn4"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxQ-jQ-YU2" userLabel="separator">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Jqg-5U-VzO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-kT-iKl" userLabel="usernameLabel">
+                    <rect key="frame" x="47" y="12" width="231" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PbV-pa-XlY" secondAttribute="trailing" id="0gW-j8-iw8"/>
+                <constraint firstAttribute="centerY" secondItem="Ubq-qv-46Y" secondAttribute="centerY" id="4pX-vK-oX5"/>
+                <constraint firstItem="PbV-pa-XlY" firstAttribute="top" secondItem="1" secondAttribute="top" id="FX0-QC-2JN"/>
+                <constraint firstItem="OxQ-jQ-YU2" firstAttribute="top" secondItem="1" secondAttribute="top" id="JVh-GA-9tT"/>
+                <constraint firstAttribute="bottom" secondItem="PbV-pa-XlY" secondAttribute="bottom" id="McE-rS-x6f"/>
+                <constraint firstItem="wzm-kT-iKl" firstAttribute="leading" secondItem="Ubq-qv-46Y" secondAttribute="trailing" constant="5" id="R2I-ad-Mjl"/>
+                <constraint firstItem="wzm-kT-iKl" firstAttribute="centerY" secondItem="Ubq-qv-46Y" secondAttribute="centerY" id="X5R-yt-JcW"/>
+                <constraint firstItem="PbV-pa-XlY" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="XKa-5R-Chb"/>
+                <constraint firstItem="Ubq-qv-46Y" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="gED-zw-ih7"/>
+                <constraint firstAttribute="trailing" secondItem="jH4-7e-f8x" secondAttribute="trailing" constant="10" id="iHk-oF-W1I"/>
+                <constraint firstItem="OxQ-jQ-YU2" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="pmz-KS-2MH"/>
+                <constraint firstItem="jH4-7e-f8x" firstAttribute="centerY" secondItem="wzm-kT-iKl" secondAttribute="centerY" id="qa7-Nd-z7h"/>
+                <constraint firstItem="jH4-7e-f8x" firstAttribute="leading" secondItem="wzm-kT-iKl" secondAttribute="trailing" constant="8" id="uOo-mq-Wt3"/>
+                <constraint firstAttribute="trailing" secondItem="OxQ-jQ-YU2" secondAttribute="trailing" id="wNh-Bd-00Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageview" destination="Ubq-qv-46Y" id="M8A-kt-1oS"/>
+                <outlet property="checkButton" destination="PbV-pa-XlY" id="p4P-I1-wHv"/>
+                <outlet property="checkmarkImageview" destination="jH4-7e-f8x" id="D0E-Fk-FIo"/>
+                <outlet property="userNameLabel" destination="wzm-kT-iKl" id="rRk-iu-zWU"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sidebar_avatar_placeholder" width="32" height="32"/>
+        <image name="status_black_checkmark_unchecked" width="24" height="24"/>
+    </resources>
+</document>
