@@ -31,6 +31,7 @@
 		5B6DFC69193F977400994AEA /* NSDate+SocialNetworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6DFC68193F977400994AEA /* NSDate+SocialNetworks.m */; };
 		5B6DFC6C193F988A00994AEA /* NSDateFormatter+SocialNetworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6DFC6B193F988A00994AEA /* NSDateFormatter+SocialNetworks.m */; };
 		5BE05CCD1933927C00ECF810 /* NSLocale+Hack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE05CCC1933927C00ECF810 /* NSLocale+Hack.m */; };
+		78F08E8B61E8BA7FF5E6AFA8 /* Pods_WODDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACC37F7C8DAFCC86DE8519 /* Pods_WODDL.framework */; };
 		7C07A2031863661900C5FE2A /* WDDSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C07A2021863661900C5FE2A /* WDDSwitchButton.m */; };
 		7C07A2061864857500C5FE2A /* NSMutableDictionary+NilLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C07A2051864857500C5FE2A /* NSMutableDictionary+NilLogging.m */; };
 		7C25BC7518A25CE7009EBA73 /* GooglePlusProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C25BC7418A25CE7009EBA73 /* GooglePlusProfile.m */; };
@@ -450,6 +451,7 @@
 
 /* Begin PBXFileReference section */
 		0F8AE92125434730B8EE8A1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3939CC5D72F15757C3CC652F /* Pods-WODDL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WODDL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WODDL/Pods-WODDL.debug.xcconfig"; sourceTree = "<group>"; };
 		49A541C918211E8400EC6500 /* GooglePlusLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GooglePlusLoginViewController.h; path = GooglePlus/GooglePlusLoginViewController.h; sourceTree = "<group>"; };
 		49A541CA18211E8400EC6500 /* GooglePlusLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GooglePlusLoginViewController.m; path = GooglePlus/GooglePlusLoginViewController.m; sourceTree = "<group>"; };
 		49A541CC182145D200EC6500 /* GooglePlusAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GooglePlusAPI.h; path = GooglePlus/GooglePlusAPI.h; sourceTree = "<group>"; };
@@ -1251,7 +1253,8 @@
 		9DF7EDB318290DAD00EC49D2 /* NetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
 		9DF7EDB718293C9300EC49D2 /* SocialNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworkManager.h; sourceTree = "<group>"; };
 		9DF7EDB818293C9300EC49D2 /* SocialNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworkManager.m; sourceTree = "<group>"; };
-		A56A490B95A447FA9AA449E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C2ACC37F7C8DAFCC86DE8519 /* Pods_WODDL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WODDL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1D26910C9036D3AC0ECE99 /* Pods-WODDL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WODDL.release.xcconfig"; path = "Pods/Target Support Files/Pods-WODDL/Pods-WODDL.release.xcconfig"; sourceTree = "<group>"; };
 		D81182DC18C1BC5C00B36D26 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D85E6E7518B3CBF50004F220 /* WDDURLShorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDURLShorter.h; sourceTree = "<group>"; };
 		D85E6E7618B3CBF50004F220 /* WDDURLShorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDURLShorter.m; sourceTree = "<group>"; };
@@ -1379,6 +1382,7 @@
 				972C5A8D1816C53F009AAE50 /* UIKit.framework in Frameworks */,
 				972C5A891816C53F009AAE50 /* Foundation.framework in Frameworks */,
 				533AB20CB2B343568B454735 /* libPods.a in Frameworks */,
+				78F08E8B61E8BA7FF5E6AFA8 /* Pods_WODDL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1395,6 +1399,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32477C7418DF06B329B8E90A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3939CC5D72F15757C3CC652F /* Pods-WODDL.debug.xcconfig */,
+				CF1D26910C9036D3AC0ECE99 /* Pods-WODDL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		49A541C818211E4800EC6500 /* GooglePlusAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1651,7 +1664,7 @@
 				97890ED21817C2C200BDB6B9 /* Constants */,
 				972C5AAD1816C53F009AAE50 /* WoddlTests */,
 				972C5A871816C53F009AAE50 /* Frameworks */,
-				A56A490B95A447FA9AA449E6 /* Pods.xcconfig */,
+				32477C7418DF06B329B8E90A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1685,6 +1698,7 @@
 				972C5A8C1816C53F009AAE50 /* UIKit.framework */,
 				972C5AA71816C53F009AAE50 /* XCTest.framework */,
 				0F8AE92125434730B8EE8A1E /* libPods.a */,
+				C2ACC37F7C8DAFCC86DE8519 /* Pods_WODDL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3614,12 +3628,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972C5AB71816C53F009AAE50 /* Build configuration list for PBXNativeTarget "WODDL" */;
 			buildPhases = (
-				7F5EDCDCD1444AC393744F52 /* Check Pods Manifest.lock */,
+				7F5EDCDCD1444AC393744F52 /* [CP] Check Pods Manifest.lock */,
 				972C5A811816C53F009AAE50 /* Sources */,
 				972C5A821816C53F009AAE50 /* Frameworks */,
 				972C5A831816C53F009AAE50 /* Resources */,
-				0342E07962D943988CD1C8C9 /* Copy Pods Resources */,
+				0342E07962D943988CD1C8C9 /* [CP] Copy Pods Resources */,
 				7CBF3DBA1869CD0F00093426 /* Update localization */,
+				FBEE3AE3E57FEFC0BF918618 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3659,6 +3674,8 @@
 				ORGANIZATIONNAME = IDS;
 				TargetAttributes = {
 					972C5A841816C53F009AAE50 = {
+						DevelopmentTeam = 9T2WUXM66D;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -3747,19 +3764,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0342E07962D943988CD1C8C9 /* Copy Pods Resources */ = {
+		0342E07962D943988CD1C8C9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WODDL/Pods-WODDL-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CBF3DBA1869CD0F00093426 /* Update localization */ = {
@@ -3777,19 +3794,34 @@
 			shellScript = "#!/bin/sh\n\n#rm -rf ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Base.lproj\n\ncp ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/en.lproj/Main.strings ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Base.lproj/Main.strings\ncp ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/en.lproj/Localizable.strings ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Base.lproj/Localizable.strings\nrm -rf ${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/en.lproj\n";
 			showEnvVarsInLog = 0;
 		};
-		7F5EDCDCD1444AC393744F52 /* Check Pods Manifest.lock */ = {
+		7F5EDCDCD1444AC393744F52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBEE3AE3E57FEFC0BF918618 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WODDL/Pods-WODDL-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -4456,13 +4488,15 @@
 		};
 		972C5AB81816C53F009AAE50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A56A490B95A447FA9AA449E6 /* Pods.xcconfig */;
+			baseConfigurationReference = 3939CC5D72F15757C3CC652F /* Pods-WODDL.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T2WUXM66D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -4482,27 +4516,31 @@
 					"\"${PODS_ROOT}/BuildHeaders\"/**",
 				);
 				INFOPLIST_FILE = "Woddl/Woddl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					Woddl/External/XMPPFramework/Vendor/libidn,
 					"Woddl/Social\\ APIs/GoogleAPI/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roman.woddl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "69faa425-0fde-45d7-8fcf-f27c10bcf9ae";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		972C5AB91816C53F009AAE50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A56A490B95A447FA9AA449E6 /* Pods.xcconfig */;
+			baseConfigurationReference = CF1D26910C9036D3AC0ECE99 /* Pods-WODDL.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T2WUXM66D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -4522,14 +4560,16 @@
 					"\"${PODS_ROOT}/BuildHeaders\"/**",
 				);
 				INFOPLIST_FILE = "Woddl/Woddl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					Woddl/External/XMPPFramework/Vendor/libidn,
 					"Woddl/Social\\ APIs/GoogleAPI/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roman.woddl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "69faa425-0fde-45d7-8fcf-f27c10bcf9ae";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -4539,7 +4579,6 @@
 		};
 		972C5ABB1816C53F009AAE50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A56A490B95A447FA9AA449E6 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Woddl.app/Woddl";
@@ -4567,7 +4606,6 @@
 		};
 		972C5ABC1816C53F009AAE50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A56A490B95A447FA9AA449E6 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Woddl.app/Woddl";

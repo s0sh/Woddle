@@ -1,0 +1,6 @@
+framework module Objective_C_HMTL_Parser {
+  umbrella header "Objective-C-HMTL-Parser-umbrella.h"
+
+  export *
+  module * { export * }
+}

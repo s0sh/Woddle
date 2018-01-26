@@ -1,0 +1,6 @@
+framework module BTBadgeView {
+  umbrella header "BTBadgeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

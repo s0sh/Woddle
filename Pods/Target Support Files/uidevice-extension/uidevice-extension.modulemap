@@ -1,0 +1,6 @@
+framework module uidevice_extension {
+  umbrella header "uidevice-extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
